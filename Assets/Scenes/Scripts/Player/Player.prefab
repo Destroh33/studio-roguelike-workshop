@@ -98,10 +98,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7615931143467286684}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80cdc1edad0818242a968963a2ec5120, type: 3}
+  m_Script: {fileID: 11500000, guid: d0e431d96df1d854289cc18dbd5129f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidbody: {fileID: 7295048805350958644}
+  rigidbody: {fileID: 0}
 --- !u!212 &7725347971992770342
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -141,7 +141,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1794280703
-  m_SortingLayer: 0
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -1754408622, guid: 9a5c95f600ed83bafa7c0bbe0b5a26f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -250,9 +250,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a7542a3a39b8343b4697322035aedb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ProjectileShootEvent:
+    m_PersistentCalls:
+      m_Calls: []
   projectilePrefab: {fileID: 144368321731950493, guid: c57b97053e40db54fac992d6555686b3, type: 3}
-  projectileSpeed: 2
-  shootingCooldown: 0
+  ShootingSpeed: 5
+  ShootingCooldown: 1
+  Damage: 1
+  ProjectileLifetime: 5
+  ProjectileScale: 1
 --- !u!114 &6047281709674204435
 MonoBehaviour:
   m_ObjectHideFlags: 0
