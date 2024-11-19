@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!50 &158701264 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 7295048805350958644, guid: e35de2553479c7c429b80a0a09cc650c, type: 3}
+  m_PrefabInstance: {fileID: 842779885}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &842779885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,6 +135,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -402969228387600620, guid: e35de2553479c7c429b80a0a09cc650c, type: 3}
+      propertyPath: rigidbody
+      value: 
+      objectReference: {fileID: 158701264}
     - target: {fileID: 2498103666597188799, guid: e35de2553479c7c429b80a0a09cc650c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.017
@@ -185,6 +194,14 @@ PrefabInstance:
     - target: {fileID: 7725347971992770342, guid: e35de2553479c7c429b80a0a09cc650c, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210492558478036398, guid: e35de2553479c7c429b80a0a09cc650c, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 158701264}
+    - target: {fileID: 8210492558478036398, guid: e35de2553479c7c429b80a0a09cc650c, type: 3}
+      propertyPath: stats.MaxHealth
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8879189458742161183, guid: e35de2553479c7c429b80a0a09cc650c, type: 3}
       propertyPath: m_Enabled

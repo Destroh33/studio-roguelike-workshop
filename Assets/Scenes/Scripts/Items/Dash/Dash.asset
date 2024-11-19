@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30ac5a6015dcc495ea89b9758710afcc, type: 3}
+  m_Name: Dash
+  m_EditorClassIdentifier: 
+  itemName: Dash
+  itemPrefab: {fileID: 1887723270937891898, guid: 25a75f4a4f44f81479562324e29ab381, type: 3}
+  pickupPrefab: {fileID: 4599777245956828523, guid: 2bf05687a0a7afa4480dd1496193e795, type: 3}

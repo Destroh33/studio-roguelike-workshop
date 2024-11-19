@@ -40,11 +40,14 @@ public class DashItem : MonoBehaviour
         // doubleTapDelay and if inputs were in same direction 
         if (Time.time < lastMoveTime + doubleTapDelay && lastMoveDir == dir)
         {
+            Dash(dir);
             // TODO: call Dash() with current direction
 
         }
         else
         {
+            lastMoveTime = Time.time;
+            lastMoveDir = dir;
             // TODO: set lastMoveTime to current time
             // TODO: set lastMoveDir to current direction
 
@@ -59,10 +62,12 @@ public class DashItem : MonoBehaviour
             if (Time.time > dashStartTime + dashDuration)
             {
                 // TODO: call StopDash()
+                StopDash();
 
             }
             else
             {
+                rb.velocity = dashDir*entity.stats.MovementSpeed*dashSpeedMult;
                 // TODO: set rb's velocity to dashDir multiplied by entity.stats.MovementSpeed 
                 // multiplied by dashSpeedMult
 
@@ -75,16 +80,22 @@ public class DashItem : MonoBehaviour
         if (Time.time < lastDashTime + dashCooldown) return;
 
         // TODO: set dashing equal to true
+        dashing = true;
         // set dashDir to direction
+        dashDir = direction;
         // set dashStartTime to current time
+        dashStartTime = Time.time;
 
     }
 
     void StopDash()
     {
         // TODO: set dashing to false
+        dashing = false;
         // set rb's velocity to dashEndDir multiplied by entity.stats.MovementSpeed
+        rb.velocity = dashEndDir*entity.stats.MovementSpeed;
         // set lastDashTime to current time
+        lastDashTime = Time.time;
 
     }
 }

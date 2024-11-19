@@ -10,5 +10,7 @@ public class HealthBoost : MonoBehaviour
     {
         Entity entity = transform.parent.GetComponent<Entity>();
         // TODO: increase current and max health by healthDelta
+        entity.CurrentHealth = entity.CurrentHealth+healthDelta;
+        entity.stats.MaxHealth = entity.stats.MaxHealth+healthDelta;
     }
 }
